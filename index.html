@@ -366,7 +366,7 @@
             <p class="contact-footer">+48 111 111 111</p>
           </div>
           <div class="footer-social-container">
-            <h4 class="footer-social-header">Dołącz do nas</h4>
+            <h4 class="footer-social-header">DOŁĄCZ DO NAS</h4>
             <ul class="footer-social-links">
               <li>
                 <svg width="20" height="20">
@@ -390,12 +390,72 @@
               </li>
             </ul>
           </div>
+          <div class="footer-newsletter">
+            <form name="newsletter">
+              <lebel>
+                <p class="newsletter-lebel">ZAPISZ SIE DO NEWSLETTERA</p>
+                <input
+                  type="email"
+                  name="emailnewsletter"
+                  placeholder="E-mail"
+                />
+              </lebel>
+              <button class="newsletter-btn" type="submit">
+                <p>Zapisz się</p>
+                <svg width="24" height="24">
+                  <use href="/images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close> <svg width="30" height="30"><use href="images/iconcross.svg#cross"></use></svg></button>
+        <button type="button" class="close-btn" data-modal-close>
+          <svg width="30" height="30">
+            <use href="images/icons.svg#close-form"></use>
+          </svg>
+        </button>
+        <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
+        <form class="modal-form">
+          <lebel class="modal-lebel"
+            ><p>Imię</p>
+            <svg>
+              <use href="/images/icons.svg#person-form"></use>
+            </svg>
+            <input
+              type="text"
+              name="firstname"
+              class="form-input firstname"
+              required
+          /></lebel>
+          <lebel class="modal-lebel"
+            ><p>Telefon</p>
+            <svg>
+              <use href="/images/icons.svg#phone-form"></use>
+            </svg>
+            <input type="tel" name="phone" class="form-input" required
+          /></lebel>
+          <lebel class="modal-lebel"
+            ><p>Email</p>
+            <svg>
+              <use href="/images/icons.svg#email-form"></use>
+            </svg>
+            <input type="email" name="email" class="form-input" required
+          /></lebel>
+          <lebel class="modal-lebel"
+            ><p>Komantarz</p>
+            <input
+              tape="textarea"
+              name="textinfo"
+              class="form-textarea"
+              placeholder="Wprowadź tekst"
+              maxlength="1000"
+            />
+          </lebel>
+        </form>
       </div>
     </div>
 
