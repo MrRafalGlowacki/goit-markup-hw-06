@@ -392,14 +392,14 @@
           </div>
           <div class="footer-newsletter">
             <form name="newsletter">
-              <lebel>
-                <p class="newsletter-lebel">ZAPISZ SIE DO NEWSLETTERA</p>
+              <label>
+                <p class="newsletter-label">ZAPISZ SIE DO NEWSLETTERA</p>
                 <input
                   type="email"
                   name="emailnewsletter"
                   placeholder="E-mail"
                 />
-              </lebel>
+              </label>
               <button class="newsletter-btn" type="submit">
                 <p>Zapisz się</p>
                 <svg width="24" height="24">
@@ -420,41 +420,59 @@
         </button>
         <h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
         <form class="modal-form">
-          <lebel class="modal-lebel"
+          <label class="modal-label"
             ><p>Imię</p>
             <svg>
               <use href="images/icons.svg#person-form"></use>
             </svg>
-            <input
-              type="text"
-              name="firstname"
-              class="form-input firstname"
-              required
-          /></lebel>
-          <lebel class="modal-lebel"
+            <input type="text" name="firstname" class="form-input" required />
+          </label>
+          <label class="modal-label"
             ><p>Telefon</p>
             <svg>
               <use href="images/icons.svg#phone-form"></use>
             </svg>
             <input type="tel" name="phone" class="form-input" required
-          /></lebel>
-          <lebel class="modal-lebel"
+          /></label>
+          <label class="modal-label"
             ><p>Email</p>
             <svg>
               <use href="images/icons.svg#email-form"></use>
             </svg>
             <input type="email" name="email" class="form-input" required
-          /></lebel>
-          <lebel class="modal-lebel"
+          /></label>
+          <label class="modal-label"
             ><p>Komantarz</p>
-            <input
+            <textarea
               tape="textarea"
               name="textinfo"
               class="form-textarea"
               placeholder="Wprowadź tekst"
-              maxlength="1000"
+              rows="8"
+            ></textarea>
+          </label>
+          <div class="terms-field">
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              value="checked"
+              class="terms-input"
+              required
             />
-          </lebel>
+
+            <label class="terms-label" for="terms"
+              ><div class="check-icon">
+                <svg>
+                  <use href="images/icons.svg#vector"></use>
+                </svg>
+              </div>
+              Oświadczam iż akceptuję
+              <a href="" class="terms-link"> Regulamin </a>i
+              <a href="" class="terms-link">Politykę Prywatności.</a>
+            </label>
+          </div>
+          <button type="submit" class="form-btn">Wyślij</button>
         </form>
       </div>
     </div>
